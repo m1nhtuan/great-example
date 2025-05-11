@@ -1,0 +1,167 @@
+# Kiến thức cần nắm về Mạng máy tính (Computer Network)
+
+## 1. Khái niệm
+
+- Mạng máy tính là tập hợp các máy tính kết nối với nhau để chia sẻ tài nguyên, dữ liệu và giao tiếp.
+
+## 2. Mô hình tham chiếu OSI (7 tầng)
+
+1. **Physical (Vật lý):** Truyền tín hiệu điện, cáp, card mạng.
+2. **Data Link (Liên kết dữ liệu):** Đóng gói frame, kiểm soát lỗi, MAC address (Ethernet, Switch).
+3. **Network (Mạng):** Định tuyến, địa chỉ IP (Router, IP, ICMP).
+4. **Transport (Giao vận):** Truyền dữ liệu tin cậy (TCP), không tin cậy (UDP), phân mảnh, kiểm soát luồng.
+5. **Session (Phiên):** Quản lý phiên giao tiếp.
+6. **Presentation (Trình bày):** Mã hóa, nén, chuyển đổi định dạng dữ liệu.
+7. **Application (Ứng dụng):** Giao diện cho ứng dụng (HTTP, FTP, SMTP, DNS,...).
+
+## 3. Mô hình TCP/IP (4 tầng)
+
+- Network Access, Internet, Transport, Application.
+
+## 4. Giao thức quan trọng
+
+- **IP:** Địa chỉ hóa và định tuyến gói tin.
+- **TCP:** Truyền dữ liệu tin cậy, kiểm soát lỗi, thứ tự.
+- **UDP:** Truyền dữ liệu không đảm bảo, nhanh, không kiểm soát lỗi.
+- **HTTP/HTTPS:** Giao thức truyền siêu văn bản (web).
+- **DNS:** Phân giải tên miền sang IP.
+- **DHCP:** Cấp phát động địa chỉ IP.
+- **FTP/SMTP/POP3/IMAP:** Truyền file, email.
+
+## 5. Địa chỉ IP, subnet, routing
+
+- **IP Address:** Địa chỉ định danh thiết bị trên mạng (IPv4, IPv6).
+- **Subnet:** Chia nhỏ mạng thành các mạng con.
+- **Routing:** Định tuyến gói tin giữa các mạng (Router).
+- **NAT:** Chuyển đổi địa chỉ mạng, cho phép nhiều thiết bị dùng chung 1 IP công cộng.
+- **Firewall:** Tường lửa, kiểm soát truy cập, bảo vệ mạng.
+
+## 6. Bảo mật mạng
+
+- **Mã hóa, xác thực, VPN, SSL/TLS, IDS/IPS.**
+- **Tấn công mạng:** DDoS, Man-in-the-middle, Phishing, Malware...
+
+## 7. Ứng dụng thực tế
+
+- Internet, mạng LAN, WAN, mạng không dây (WiFi), IoT, Cloud.
+
+## 8. Chuẩn ISO và vai trò của mô hình OSI
+
+- **ISO (International Organization for Standardization):** Tổ chức quốc tế xây dựng các tiêu chuẩn, trong đó có mô hình OSI (Open Systems Interconnection) giúp chuẩn hóa giao tiếp mạng.
+
+## 9. Giải quyết mất gói tin (Lost Packet)
+
+- **Lost packet:** Gói tin bị mất trong quá trình truyền do nhiễu, lỗi thiết bị, tắc nghẽn.
+- **TCP:** Có cơ chế xác nhận (ACK) và truyền lại gói tin nếu bị mất.
+- **UDP:** Không tự động truyền lại, ứng dụng phải tự xử lý nếu cần.
+- **Kỹ thuật khác:** Mã sửa lỗi (FEC), tăng băng thông, tối ưu thiết bị, QoS.
+
+## 10. Các loại thiết bị mạng
+
+- **Hub:** Kết nối nhiều thiết bị, truyền dữ liệu đến tất cả các cổng.
+- **Switch:** Chuyển mạch, truyền dữ liệu đến đúng thiết bị đích.
+- **Router:** Định tuyến gói tin giữa các mạng.
+- **Bridge:** Kết nối và chia nhỏ mạng.
+- **Access Point:** Kết nối không dây (WiFi).
+- **Modem:** Chuyển đổi tín hiệu giữa mạng nhà và nhà cung cấp dịch vụ.
+
+## 11. Các loại mạng
+
+- **PAN (Personal Area Network):** Mạng cá nhân.
+- **LAN (Local Area Network):** Mạng cục bộ.
+- **MAN (Metropolitan Area Network):** Mạng đô thị.
+- **WAN (Wide Area Network):** Mạng diện rộng.
+- **CAN (Campus Area Network):** Mạng khuôn viên.
+- **SAN (Storage Area Network):** Mạng lưu trữ.
+- **VPN (Virtual Private Network):** Mạng riêng ảo.
+
+## 12. Các khái niệm quan trọng
+
+- **Băng thông (Bandwidth):** Lượng dữ liệu tối đa truyền qua mạng trong 1 giây.
+- **Độ trễ (Latency):** Thời gian trễ khi truyền dữ liệu.
+- **Thông lượng (Throughput):** Lượng dữ liệu thực tế truyền được.
+- **Jitter:** Độ dao động của độ trễ.
+
+## 13. Địa chỉ MAC và ARP
+
+- **MAC Address:** Địa chỉ vật lý của card mạng.
+- **ARP (Address Resolution Protocol):** Giao thức phân giải địa chỉ IP sang MAC.
+
+## 14. Multicast, Broadcast, Unicast
+
+- **Unicast:** Gửi từ một thiết bị đến một thiết bị khác.
+- **Broadcast:** Gửi đến tất cả thiết bị trong mạng LAN.
+- **Multicast:** Gửi đến một nhóm thiết bị nhất định.
+
+## 15. Công cụ kiểm tra mạng phổ biến
+
+- **ping:** Kiểm tra kết nối mạng.
+- **traceroute:** Kiểm tra đường đi của gói tin.
+- **netstat:** Xem các kết nối mạng.
+- **wireshark:** Phân tích gói tin mạng.
+
+## 16. VLAN (Virtual LAN)
+
+- **VLAN:** Chia mạng vật lý thành nhiều mạng logic độc lập.
+
+## 17. Một số thuật ngữ bảo mật mạng
+
+- **Port Security:** Giới hạn thiết bị truy cập vào switch.
+- **DMZ (Demilitarized Zone):** Vùng mạng trung gian giữa mạng nội bộ và Internet.
+- **Proxy:** Trung gian giữa client và server.
+- **Honeypot:** Bẫy để phát hiện, nghiên cứu tấn công mạng.
+
+## 18. Các từ viết tắt và giải thích
+
+- **OSI (Open Systems Interconnection):** Mô hình tham chiếu 7 tầng giúp chuẩn hóa giao tiếp mạng.
+- **ISO (International Organization for Standardization):** Tổ chức quốc tế xây dựng các tiêu chuẩn, trong đó có mô hình OSI.
+- **TCP (Transmission Control Protocol):** Giao thức truyền dữ liệu tin cậy, có kiểm soát lỗi và thứ tự.
+- **UDP (User Datagram Protocol):** Giao thức truyền dữ liệu không đảm bảo, nhanh, không kiểm soát lỗi.
+- **IP (Internet Protocol):** Giao thức định địa chỉ và định tuyến gói tin trên mạng.
+- **MAC (Media Access Control):** Địa chỉ vật lý của card mạng, dùng để nhận diện thiết bị trong mạng LAN.
+- **DHCP (Dynamic Host Configuration Protocol):** Giao thức cấp phát động địa chỉ IP cho các thiết bị trong mạng.
+- **DNS (Domain Name System):** Hệ thống phân giải tên miền sang địa chỉ IP.
+- **NAT (Network Address Translation):** Chuyển đổi địa chỉ mạng, cho phép nhiều thiết bị dùng chung một IP công cộng.
+- **VLAN (Virtual Local Area Network):** Mạng LAN ảo, chia mạng vật lý thành nhiều mạng logic.
+- **VPN (Virtual Private Network):** Mạng riêng ảo, giúp kết nối an toàn qua Internet.
+- **DMZ (Demilitarized Zone):** Vùng mạng trung gian giữa mạng nội bộ và Internet, tăng cường bảo mật.
+- **FEC (Forward Error Correction):** Kỹ thuật sửa lỗi chuyển tiếp, giúp giảm mất mát dữ liệu.
+- **QoS (Quality of Service):** Cơ chế ưu tiên lưu lượng mạng quan trọng.
+- **ARP (Address Resolution Protocol):** Giao thức phân giải địa chỉ IP sang MAC.
+- **FTP (File Transfer Protocol):** Giao thức truyền tệp tin.
+- **SMTP (Simple Mail Transfer Protocol):** Giao thức gửi email.
+- **POP3 (Post Office Protocol 3):** Giao thức nhận email.
+- **IMAP (Internet Message Access Protocol):** Giao thức truy cập email.
+- **IDS (Intrusion Detection System):** Hệ thống phát hiện xâm nhập.
+- **IPS (Intrusion Prevention System):** Hệ thống ngăn chặn xâm nhập.
+- **SSL (Secure Sockets Layer):** Giao thức bảo mật truyền thông.
+- **TLS (Transport Layer Security):** Phiên bản nâng cao của SSL, bảo mật truyền thông.
+
+## 19. Cách chia IP (Subnetting)
+
+- **Subnetting (Chia subnet):** Là quá trình chia một mạng lớn thành nhiều mạng con nhỏ hơn để quản lý hiệu quả, tăng bảo mật và tối ưu tài nguyên.
+- **Subnet mask:** Xác định phần nào của địa chỉ IP là mạng, phần nào là host.
+- **Cách tính subnet:**
+  - Xác định số lượng mạng con hoặc số host cần thiết.
+  - Chọn subnet mask phù hợp (ví dụ: /24, /25, /26,...).
+  - Tính dải địa chỉ IP cho từng subnet.
+- **Ví dụ:**
+  - Địa chỉ mạng: 192.168.1.0/24 (255.255.255.0) có thể chia thành 2 subnet /25:
+    - 192.168.1.0/25 (192.168.1.0 – 192.168.1.127)
+    - 192.168.1.128/25 (192.168.1.128 – 192.168.1.255)
+
+## 20. Giải quyết lost packet và các trường hợp thực tế
+
+- **Lost packet:** Là hiện tượng gói tin bị mất trong quá trình truyền qua mạng.
+- **Nguyên nhân:** Nhiễu, tắc nghẽn, lỗi thiết bị, lỗi cấu hình, khoảng cách xa, chất lượng đường truyền kém.
+- **Cách phát hiện:**
+  - Sử dụng lệnh `ping` để kiểm tra tỉ lệ mất gói (packet loss).
+  - Dùng công cụ như Wireshark để phân tích lưu lượng mạng.
+- **Cách giải quyết:**
+  - **TCP:** Tự động phát hiện và truyền lại gói tin bị mất nhờ cơ chế ACK và timeout.
+  - **UDP:** Ứng dụng phải tự xử lý nếu cần đảm bảo dữ liệu (ví dụ: truyền lại, bổ sung mã sửa lỗi FEC).
+  - **Tối ưu mạng:** Nâng cấp thiết bị, tăng băng thông, giảm nhiễu, cấu hình QoS để ưu tiên lưu lượng quan trọng.
+- **Trường hợp thực tế:**
+  - Khi xem video trực tuyến hoặc gọi video, nếu có lost packet, hình ảnh hoặc âm thanh có thể bị giật, mất tiếng, hoặc mờ.
+  - Khi tải file qua TCP, file sẽ được truyền lại cho đến khi đủ dữ liệu, nên thường không bị lỗi file.
+  - Khi chơi game online, lost packet có thể gây lag, mất kết nối hoặc thao tác không phản hồi.
