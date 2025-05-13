@@ -1,5 +1,17 @@
 # Ôn tập thuật toán Sort & Search (Sắp xếp & Tìm kiếm) - C++
 
+## Bảng so sánh độ phức tạp các thuật toán Sort & Search
+
+| Thuật toán     | Trường hợp tốt nhất | Trung bình | Trường hợp xấu nhất | Ghi chú                  |
+| -------------- | ------------------- | ---------- | ------------------- | ------------------------ |
+| Bubble Sort    | O(n)                | O(n^2)     | O(n^2)              | Có thể dừng sớm          |
+| Selection Sort | O(n^2)              | O(n^2)     | O(n^2)              | Không ổn định            |
+| Insertion Sort | O(n)                | O(n^2)     | O(n^2)              | Tốt cho mảng gần sắp xếp |
+| Quick Sort     | O(n log n)          | O(n log n) | O(n^2)              | Chọn pivot xấu           |
+| Merge Sort     | O(n log n)          | O(n log n) | O(n log n)          | Ổn định, tốn bộ nhớ phụ  |
+| Linear Search  | O(1)                | O(n)       | O(n)                | Không cần sắp xếp        |
+| Binary Search  | O(1)                | O(log n)   | O(log n)            | Mảng đã sắp xếp          |
+
 ## I. Thuật toán Sắp xếp (Sorting Algorithms)
 
 ### 1. Bubble Sort (Sắp xếp nổi bọt)

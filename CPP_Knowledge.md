@@ -157,3 +157,19 @@ string s = "hello";
 reverse(s.begin(), s.end());
 cout << s; // olleh
 ```
+
+## 14. Dịch bit trong C++ (Bitwise Shift)
+
+- **Dịch trái (<<):** Dịch các bit sang trái, tương đương nhân với 2^n.
+- **Dịch phải (>>):** Dịch các bit sang phải, tương đương chia cho 2^n (bỏ phần dư).
+
+```cpp
+int a = 5;      // 0000 0101
+int b = a << 1; // 0000 1010 = 10 (dịch trái 1 bit, nhân 2)
+int c = a >> 1; // 0000 0010 = 2  (dịch phải 1 bit, chia 2)
+cout << b << " " << c; // 10 2
+```
+
+- **Ứng dụng:**
+  - Tăng tốc tính toán nhân/chia cho 2^n.
+  - Kiểm tra, thiết lập, xóa bit trong lập trình hệ thống, nhúng.
